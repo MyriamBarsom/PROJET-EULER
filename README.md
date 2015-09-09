@@ -14,10 +14,15 @@ elapsed = time.time() - start
 print "result %s returned in %s seconds" % (s,elapsed)
 
 #PROBLEM 2
+
 prev, cur = 0, 1
+
 total = 0
+
 while True:
-    prev, cur = cur, prev + cur
+
+prev, cur = cur, prev + cur
+
     if cur >= 4000000:
         break
     if cur % 2 == 0:
